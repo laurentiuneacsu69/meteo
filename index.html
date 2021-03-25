@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="main-container">
+            <header>
+<!--                <h1 id="datetime">Loading date...</h1>-->
+                <form>
+                    <div id="main-panel">
+                        <i class="fas fa-search"></i>
+                        <div class="input-group">
+                            <input type="text" id="city-input" placeholder="Search city" />
+                            <button type="submit" class="button" id="submit">Submit</button>
+                        </div>
+                        <hr/>
+                        <span class="error-msg">No matching location found!</span>
+                    </div>
+                </form>
+            </header>
+            <div class="square-panel" id="main-info">
+                <div class="panel-overview">
+                    <span id="location"></span><br/>
+                    <span id="weather-text">Weather: <span id="weather"></span></span>
+                </div>
+                <div class="square-panel">
+                    <div class="square-panel-column_1">
+                        <div class="square-item">
+                            <span class="square-item-text">
+                            Actual temperature <span id="actual-temp" class="square-item-value"></span>
+                            </span>
+                        </div>
+                        <div class="square-item">
+                            <span class="square-item-text">
+                            Perceived temperature<span id="perceived-temp"  class="square-item-value"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="square-panel-column_2">
+                        <div class="square-item">
+                            <span class="square-item-text">
+                            Wind Speed<span id="wind"  class="square-item-value"></span>
+                            </span>
+                        </div>
+                        <div class="square-item">
+                            <span class="square-item-text">
+                            Humidity<span id="humidity"  class="square-item-value"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
